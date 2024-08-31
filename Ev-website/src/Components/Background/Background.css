@@ -1,0 +1,21 @@
+.background {
+    height: 100%;
+    width: 100%;
+    padding: 0; /* Remove padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover; /* Ensures the content covers the container */
+    z-index: -1; /* Places the background behind other content */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 500ms ease-in-out;
+}
